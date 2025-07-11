@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ViriyaCompany/static/css/main.dae69aab.css",
+    "main.js": "/ViriyaCompany/static/js/main.6b94527a.js",
+    "static/media/banner-tech.png": "/ViriyaCompany/static/media/banner-tech.3338370a3c377a578410.png",
+    "index.html": "/ViriyaCompany/index.html",
+    "main.dae69aab.css.map": "/ViriyaCompany/static/css/main.dae69aab.css.map",
+    "main.6b94527a.js.map": "/ViriyaCompany/static/js/main.6b94527a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dae69aab.css",
+    "static/js/main.6b94527a.js"
+  ]
+}
