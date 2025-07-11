@@ -1,14 +1,25 @@
 {
   "files": {
     "main.css": "/ViriyaCompany/static/css/main.dae69aab.css",
-    "main.js": "/ViriyaCompany/static/js/main.6b94527a.js",
+    "main.js": "/ViriyaCompany/static/js/main.3cad114a.js",
+    "static/media/product1.png": "/ViriyaCompany/static/media/product1.b811dde508b8baaea742.png",
+    "static/media/product2.png": "/ViriyaCompany/static/media/product2.5893d868699afa23dd10.png",
     "static/media/banner-tech.png": "/ViriyaCompany/static/media/banner-tech.3338370a3c377a578410.png",
+    "static/media/product3.png": "/ViriyaCompany/static/media/product3.90b37eacef347422ce12.png",
+    "static/media/contact.png": "/ViriyaCompany/static/media/contact.b8ce273ca39ba45aa857.png",
+    "static/media/product6.png": "/ViriyaCompany/static/media/product6.5b727b293d01b8ee3fd0.png",
+    "static/media/product5.png": "/ViriyaCompany/static/media/product5.987560817c443776123c.png",
+    "static/media/product7.png": "/ViriyaCompany/static/media/product7.dca21713cde2d9518df5.png",
+    "static/media/product4.png": "/ViriyaCompany/static/media/product4.fb4da5e5da64b1d97f3b.png",
+    "static/media/team1.png": "/ViriyaCompany/static/media/team1.6bd26d8d741c45cbd200.png",
+    "static/media/team3.png": "/ViriyaCompany/static/media/team3.05513a52530336235354.png",
+    "static/media/team2.png": "/ViriyaCompany/static/media/team2.380073dde7ed2ec1c457.png",
     "index.html": "/ViriyaCompany/index.html",
     "main.dae69aab.css.map": "/ViriyaCompany/static/css/main.dae69aab.css.map",
-    "main.6b94527a.js.map": "/ViriyaCompany/static/js/main.6b94527a.js.map"
+    "main.3cad114a.js.map": "/ViriyaCompany/static/js/main.3cad114a.js.map"
   },
   "entrypoints": [
     "static/css/main.dae69aab.css",
-    "static/js/main.6b94527a.js"
+    "static/js/main.3cad114a.js"
   ]
 }
