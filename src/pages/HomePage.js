@@ -1,40 +1,51 @@
+// src/pages/HomePage.js
 import React from 'react';
+import './HomePage.css';
 
 const HomePage = () => {
+  const products = [
+    {
+      title: 'Smartwatch Pro',
+      image: '/images/products/product1.png',
+      description: 'Experience cutting-edge technology with our Smartwatch Pro, featuring health tracking and seamless connectivity.',
+    },
+    {
+      title: 'Dining Table Set',
+      image: '/images/products/product3.png',
+      description: 'Enhance your dining experience with our elegant wooden table set, perfect for any modern home.',
+    },
+    {
+      title: 'Ultra Laptop',
+      image: '/images/products/product2.png',
+      description: 'Meet the Ultra Laptop, combining power and portability for professionals on the go.',
+    },
+  ];
+
+
   return (
-    <div className="p-6">
-      <section className="bg-blue-600 text-white py-16 text-center rounded">
-        <h1 className="text-3xl font-bold">Our Core Values</h1>
-        <p className="mt-2 text-lg">Integrity, Innovation, and Excellence</p>
-        <button className="mt-4 bg-white text-blue-600 px-4 py-2 rounded shadow">Learn More</button>
+    <div>
+      <section className="hero-section">
+        <h1>Our Core Values</h1>
+        <p>Integrity, Innovation, and Excellence</p>
+        <button className="hero-button">Learn More</button>
       </section>
 
-      <section className="mt-10 text-center">
-        <h2 className="text-2xl font-semibold">Welcome to Viriya</h2>
-        <p className="mt-2">Viriya is committed to providing the highest quality products to our customers, driven by our values of integrity and innovation.</p>
+      <section className="welcome-section">
+        <h2>Welcome to Viriya</h2>
+        <p>
+          Viriya is committed to providing the highest quality products to our customers, driven by our values of integrity and innovation.
+        </p>
       </section>
 
-      <section className="mt-10">
-        <h3 className="text-xl font-bold mb-4 text-center">Featured Products</h3>
-        <div className="grid md:grid-cols-3 gap-6">
-          {[
-            {
-              title: 'Smartwatch Pro',
-              description: 'Experience cutting-edge technology with our Smartwatch Pro, featuring health tracking and seamless connectivity.',
-            },
-            {
-              title: 'Dining Table Set',
-              description: 'Enhance your dining experience with our elegant wooden table set, perfect for any modern home.',
-            },
-            {
-              title: 'Ultra Laptop',
-              description: 'Meet the Ultra Laptop, combining power and portability for professionals on the go.',
-            }
-          ].map((product, idx) => (
-            <div key={idx} className="border rounded shadow p-4">
-              <h4 className="font-bold">{product.title}</h4>
-              <p className="mt-2">{product.description}</p>
-              <button className="mt-4 text-white bg-blue-600 px-4 py-2 rounded">View Details</button>
+      <section className="products-section">
+        <h3>Featured Products</h3>
+        <div className="products-grid">
+          {products.map((product, idx) => (
+            <div key={idx} className="product-card">
+              <img src={product.image} alt={product.title} className="product-image" />
+              <h4>{product.title}</h4>
+              <p>{product.description}</p>
+              <button className="view-button">View Details</button>
             </div>
           ))}
         </div>

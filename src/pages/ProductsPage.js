@@ -1,33 +1,53 @@
 import React from 'react';
+import './ProductsPage.css';
 
 const ProductsPage = () => {
   const categories = ['Electronics', 'Furniture', 'Groceries'];
   const products = [
-    { name: 'Smartphone', category: 'Electronics', desc: 'Experience cutting-edge technology with our latest smartphone model.' },
-    { name: 'Dining Table Set', category: 'Furniture', desc: 'Add elegance to your dining area with our stylish table sets.' },
-    { name: 'Fresh Vegetables', category: 'Groceries', desc: 'Choose from a wide variety of fresh vegetables sourced locally.' },
-    { name: 'Laptop', category: 'Electronics', desc: 'Enhance your productivity with our high-performance laptops.' },
+    {
+      name: 'Smartphone',
+      category: 'Electronics',
+      image: '/images/products/product4.png',
+      desc: 'Experience cutting-edge technology with our latest smartphone model.'
+    },
+    {
+      name: 'Dining Table Set',
+      category: 'Furniture',
+      image: '/images/products/product5.png',
+      desc: 'Add elegance to your dining area with our stylish table sets.'
+    },
+    {
+      name: 'Fresh Vegetables',
+      category: 'Groceries',
+      image: '/images/products/product6.png',
+      desc: 'Choose from a wide variety of fresh vegetables sourced locally.'
+    },
+    {
+      name: 'Laptop',
+      category: 'Electronics',
+      image: '/images/products/product7.png',
+      desc: 'Enhance your productivity with our high-performance laptops.'
+    },
   ];
 
   return (
-    <div className="p-6 flex flex-col md:flex-row gap-8">
-      <aside className="w-full md:w-1/4">
-        <h3 className="font-bold mb-4">Filter by Category</h3>
+    <div className="products-container">
+      <aside className="sidebar">
+        <h3>Filter by Category</h3>
         {categories.map((cat, idx) => (
-          <div key={idx} className="mb-2">
-            <input type="radio" id={cat} name="category" className="mr-2" />
-            <label htmlFor={cat}>{cat}</label>
-          </div>
+          <label key={idx} className="category-filter">
+            <input type="radio" name="category" /> {cat}
+          </label>
         ))}
       </aside>
 
-      <main className="grid gap-6 md:grid-cols-2 w-full">
+      <main className="product-list">
         {products.map((product, idx) => (
-          <div key={idx} className="p-4 border rounded shadow">
-            <div className="h-40 bg-gray-200 rounded mb-4"></div>
-            <h4 className="font-bold">{product.name}</h4>
-            <p className="mt-2 text-sm">{product.desc}</p>
-            <button className="mt-4 text-white bg-blue-600 px-4 py-2 rounded">More Details</button>
+          <div key={idx} className="product-card">
+            <img src={product.image} alt={product.name} className="product-image" />
+            <h4>{product.name}</h4>
+            <p>{product.desc}</p>
+            <button className="view-button">More Details</button>
           </div>
         ))}
       </main>

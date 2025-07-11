@@ -1,0 +1,62 @@
+/* src/App.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.app-container {
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+}
+
+button.primary {
+  background-color: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button.primary:hover {
+  background-color: #1d4ed8;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #555;
+}
+
+.stats-box {
+  background-color: #e0ecff;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+}
+
+.stats-box p {
+  margin: 4px 0;
+}
